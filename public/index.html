@@ -5,25 +5,104 @@
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/previous-Tweet.css" type="text/css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <div class="right-menu">
+        <span>Write A New Tweet</span>
+        <span><i class="fas fa-angle-double-down" id="arrow"></i></span>
+      </div>
     </nav>
+    <header class="background-color" id="navheader">
+      <img class="avatar" src="/images/profile-hex.png" />
+
+      <h2 class="name-under-image">Linda Rocha</h2>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id="newTweetForm">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="description">
+            <button class="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class="newContainer" id="tweets-container">
+        <!-- <article class="previous-Tweet">
+          <header>
+            <div class="image">
+              <img src="https://i.imgur.com/73hZDYK.png%22%3E" />
+              <span>Newton</span>
+            </div>
+            <div class="random-Name">
+              <span><strong>@SirIssac</strong></span>
+            </div>
+          </header>
+
+          <div class="tweet">
+            <p>Hello There!</p>
+          </div>
+
+          <footer>
+            <span>8 days ago</span>
+            <div class="tweeticon">
+              <i class="fas fa-flag" id="firstone"></i>
+              <i class="fas fa-retweet" id="secondone"></i>
+              <i class="fas fa-heart" id="thirdone"></i>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+    </main>
+    <script type="text/javascript" src="/scripts/client.js"></script>
   </body>
 </html>

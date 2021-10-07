@@ -1,0 +1,38 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Bungee Inline";
+  /* width: 80vw; */
+}
+
+#tweet-text {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+  border-bottom: 4px solid black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  resize: none;
+  /* width: 80vw; */
+  height: 35px;
+  width: 100%;
+}
+button {
+  background-color: #4056a1;
+  border: none;
+  color: white;
+}
+
+.red {
+  color: red;
+}
+
+.submit:hover {
+  color: rgb(255, 0, 34);
+}

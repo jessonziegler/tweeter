@@ -1,0 +1,100 @@
+.newContainer {
+  padding: bottom 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.previous-Tweet {
+  margin-top: 10px;
+  border: solid black 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.previous-Tweet header {
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.previous-Tweet footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 5px black;
+  padding-top: 10px;
+}
+
+.previous-Tweet:hover {
+  box-shadow: 5px 5px #4056a1;
+}
+
+.tweeticon {
+  color: black;
+}
+
+.fas:hover {
+  color: goldenrod;
+}
+
+/* .tweeticon.fas {
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+  opacity: 0.9;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+} */
+#firstone {
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: 0.7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+#secondone {
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+  opacity: 0.9;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#thirdone {
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: 0.7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}

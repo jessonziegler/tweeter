@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: #4056a1;
+  position: fixed;
+  width: 100%;
+}
+nav span {
+  font-family: "Bungee Inline", cursive;
+  color: #ffffff;
+  margin-left: 1.5em;
+}
+.right-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5em;
+}
+.fa-angle-double-down {
+  color: red;
+}

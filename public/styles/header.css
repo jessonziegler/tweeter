@@ -1,0 +1,97 @@
+#navheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  flex-flow: column;
+  padding-top: 100px;
+}
+.background-color {
+  background-color: orangered;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+.name-under-image {
+  margin-top: 0%;
+  color: whitesmoke;
+}
+
+.avatar {
+  width: 175px;
+  height: 175px;
+}
+/* .fas { */
+/* animation: roll 3s infinite;
+  transform: rotate(30deg);
+  opacity: 0.7;
+} */
+
+/* @keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+/* animation: skew 3s infinite; turn this back on
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: 0.7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+} */
+
+#arrow {
+  /* animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: 0.7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+} */
+
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+
+  animation-name: bounce-7;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+@keyframes bounce-7 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+} ;
