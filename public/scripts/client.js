@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// Test / driver code (temporary). Eventually will get this from the server.
 $(() => {
   const loadTweets = () => {
     console.log("loading tweets");
@@ -23,16 +22,14 @@ $(() => {
   };
 
   loadTweets();
+  $(".error").hide();
 
   const renderTweets = function (tweets) {
     $("#tweets-container").empty();
-
     for (let tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $("#tweets-container").append($tweet);
     }
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
   };
 
   const createTweetElement = function (tweetObject) {
@@ -64,14 +61,19 @@ $(() => {
   };
 
   const $form = $("#newTweetForm");
+
   $form.on("submit", function (event) {
+    $(".error").slideUp();
     event.preventDefault();
     let counter = $("#tweet-text").val().length;
     if (counter <= 0) {
-      alert("You need To Write Characters to tweet");
+      $(".errormessage").text("You Really Should Type Something");
+      $(".error").slideDown();
     } else if (counter > 140) {
-      alert("Too Many Characters");
+      $(".errormessage").text("Too Many Characters");
+      $(".error").slideDown();
     } else {
+      $(".error").slideUp();
       console.log("form was submitted");
 
       const serializedData = $(this).serialize();

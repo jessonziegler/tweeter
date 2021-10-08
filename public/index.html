@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/previous-Tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
 
     <link
       rel="stylesheet"
@@ -52,6 +53,12 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <img
+        src="/images/thrush-logo-png-transparent.png"
+        alt="Thrushbird"
+        id="bird"
+      />
+
       <div class="right-menu">
         <span>Write A New Tweet</span>
         <span><i class="fas fa-angle-double-down" id="arrow"></i></span>
@@ -66,12 +73,21 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <div class="error">
+          <i class="fas fa-exclamation-triangle"></i>
+          <span class="errormessage"></span>
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <!-- <h2>Compose Tweet</h2> -->
         <form id="newTweetForm">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <!-- <label for="tweet-text">What are you humming about?</label> -->
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
           <div class="description">
-            <button class="submit">Tweet</button>
+            <button class="button glow-button">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>

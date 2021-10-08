@@ -5,6 +5,8 @@ nav {
   height: 120px;
   background-color: #4056a1;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 nav span {
@@ -13,11 +15,18 @@ nav span {
   margin-left: 1.5em;
 }
 .right-menu {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   margin-right: 1.5em;
+  float: right;
 }
 .fa-angle-double-down {
   color: red;
+}
+#bird {
+  height: 60px;
+  width: 140px;
+  margin-right: 25em;
+  float: right;
 }

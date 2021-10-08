@@ -12,6 +12,3 @@ $(document).ready(function () {
     }
   });
 });
-
-// Set a condition like when textCount < 0 you want to addClass('red').
-// Then, go into your css file and add .red { color: red}
