@@ -15,3 +15,12 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## screenshots
+
+-!["screenshot description"](#)
+!["Main Page"](https://github.com/jessonziegler/tweeter/blob/master/docs/Main%20Page%20At%2050%25%20Screen%20Size.png?raw=true)
+
+!["screenshot description"](#)
+!["Main Page At 50% Screen Size"](https://github.com/jessonziegler/tweeter/blob/master/docs/Main%20Page%20At%2050%25%20Screen%20Size.png?raw=true)
+-
