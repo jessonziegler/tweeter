@@ -18,9 +18,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## screenshots
 
--!["screenshot description"](#)
+-!["Main Page"](#)
 !["Main Page"](https://github.com/jessonziegler/tweeter/blob/master/docs/Main%20Page.png?raw=true)
 
-!["screenshot description"](#)
+!["Main Page Screen Size 50% (Responsive Design"](#)
 !["Main Page At 50% Screen Size"](https://github.com/jessonziegler/tweeter/blob/master/docs/Main%20Page%20At%2050%25%20Screen%20Size.png?raw=true)
 -
