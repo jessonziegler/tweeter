@@ -1,9 +1,14 @@
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 50px 50px;
+    padding-top: 150px;
+  }
+
+  nav {
+    background-color: #4056a1;
   }
 
   #navheader {
@@ -14,4 +19,14 @@
     width: 50%;
   }
 }
- */
+
+@media only screen and (max-width: 1025px) {
+  #bird {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #arrow {
+    color: black;
+  }
+}

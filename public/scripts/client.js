@@ -1,9 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
+// The function below will load the tweets
 $(() => {
   const loadTweets = () => {
     console.log("loading tweets");
@@ -24,6 +19,7 @@ $(() => {
   loadTweets();
   $(".error").hide();
 
+  // The function below will render the tweets
   const renderTweets = function (tweets) {
     $("#tweets-container").empty();
     for (let tweet of tweets) {
@@ -32,6 +28,7 @@ $(() => {
     }
   };
 
+  // The function below will create the new tweets by pulling from database
   const createTweetElement = function (tweetObject) {
     const tweet = `<article class="previous-Tweet">
                   <header>
@@ -62,6 +59,7 @@ $(() => {
 
   const $form = $("#newTweetForm");
 
+  // The fuction below will make tweet submit button work and handle error messages functionality
   $form.on("submit", function (event) {
     $(".error").slideUp();
     event.preventDefault();

@@ -5,7 +5,6 @@
   height: 400px;
   width: 100%;
   flex-flow: column;
-  padding-top: 100px;
 }
 .background-color {
   background-color: rgba(255, 0, 0, 0.657);
@@ -21,51 +20,8 @@
   width: 175px;
   height: 175px;
 }
-/* .fas { */
-/* animation: roll 3s infinite;
-  transform: rotate(30deg);
-  opacity: 0.7;
-} */
-
-/* @keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-/* animation: skew 3s infinite; turn this back on
-  transform: skew(20deg);
-  animation-direction: alternate;
-  opacity: 0.7;
-}
-
-@keyframes skew {
-  0% {
-    transform: skewX(20deg);
-  }
-  100% {
-    transform: skewX(-20deg);
-  }
-} */
 
 #arrow {
-  /* animation: skew 3s infinite;
-  transform: skew(20deg);
-  animation-direction: alternate;
-  opacity: 0.7;
-}
-
-@keyframes skew {
-  0% {
-    transform: skewX(20deg);
-  }
-  100% {
-    transform: skewX(-20deg);
-  }
-} */
-
   animation-duration: 7s;
   animation-iteration-count: infinite;
 
@@ -80,7 +36,7 @@
     transform: scale(1.1, 0.9) translateY(0);
   }
   30% {
-    transform: scale(0.9, 1.1) translateY(-100px);
+    transform: scale(0.9, 1.1) translateY(-10px);
   }
   50% {
     transform: scale(1.05, 0.95) translateY(0);

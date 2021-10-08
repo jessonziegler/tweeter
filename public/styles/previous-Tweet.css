@@ -40,20 +40,6 @@
   color: goldenrod;
 }
 
-/* .tweeticon.fas {
-  animation: roll 3s infinite;
-  transform: rotate(30deg);
-  opacity: 0.9;
-}
-
-@keyframes roll {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(10deg);
-  }
-} */
 #firstone {
   animation: skew 3s infinite;
   transform: skew(20deg);
