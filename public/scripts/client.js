@@ -65,11 +65,11 @@ $(() => {
     event.preventDefault();
     let counter = $("#tweet-text").val().length;
     if (counter <= 0) {
-      $(".errormessage").text("You Really Should Type Something");
-      $(".error").slideDown();
+      $(".errormessage").text("Please Type Something");
+      $(".error").slideDown().fadeOut(8000);
     } else if (counter > 140) {
-      $(".errormessage").text("Too Many Characters");
-      $(".error").slideDown();
+      $(".errormessage").text("Please Use 140 Characters Or Less");
+      $(".error").slideDown().fadeOut(8000);
     } else {
       $(".error").slideUp();
       console.log("form was submitted");
@@ -79,6 +79,7 @@ $(() => {
       $.post("/tweets", serializedData, (response) => {
         loadTweets();
         $("#tweet-text").val("");
+        $(".counter").text(140);
       });
     }
   });
